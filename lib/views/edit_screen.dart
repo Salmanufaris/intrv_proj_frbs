@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_app/controller/add_provider.dart';
 import 'package:flutter_app/controller/home_provider.dart';
 import 'package:flutter_app/model/model.dart';
@@ -34,7 +35,7 @@ class _EditScreenState extends State<EditScreen> {
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.arrow_back,
               color: Colors.white,
             )),
@@ -87,6 +88,7 @@ class _EditScreenState extends State<EditScreen> {
                 ),
                 GestureDetector(
                   onTap: () {
+                    editStudent(context);
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) => const HomeScreen()));
                   },
@@ -133,7 +135,6 @@ class _EditScreenState extends State<EditScreen> {
     final editedname = pro.nameController.text;
     final editedSubName = pro.subNameController.text;
     final editedPrice = pro.priceController.text;
-
     final updatedstudent = Model(
       name: editedname,
       subName: editedSubName,
