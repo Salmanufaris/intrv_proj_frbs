@@ -43,7 +43,7 @@ class AddScreen extends StatelessWidget {
                     decoration: const InputDecoration(
                         hintText: "price", border: OutlineInputBorder())),
                 const SizedBox(height: 10),
-                AddContainer()
+                const AddContainer()
               ],
             ),
           ),

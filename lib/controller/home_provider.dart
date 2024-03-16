@@ -4,6 +4,7 @@ import 'package:flutter_app/model/model.dart';
 import 'package:flutter_app/services/firebase_services.dart';
 
 class HomeProvider extends ChangeNotifier {
+  // ignore: prefer_final_fields
   FirebaseService _firebaseService = FirebaseService();
 
   Stream<QuerySnapshot<Model>> getData() {

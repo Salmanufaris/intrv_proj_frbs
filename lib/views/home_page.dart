@@ -94,8 +94,8 @@ class HomeScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton.extended(
           backgroundColor: Colors.black,
           onPressed: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => AddScreen()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const AddScreen()));
           },
           label: const Text(
             "Add",

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_app/controller/add_provider.dart';
 import 'package:flutter_app/controller/home_provider.dart';
 import 'package:flutter_app/model/model.dart';
@@ -35,7 +34,7 @@ class _EditScreenState extends State<EditScreen> {
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back,
               color: Colors.white,
             )),
